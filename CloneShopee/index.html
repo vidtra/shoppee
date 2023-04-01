@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Shopee</title>
+</head>
+<style>
+    @import url("css/default.css");
+    @import url("css/gnb.css");
+    @import url("css/banners.css");
+
+    .swiper {
+        width: 815px;
+
+    }
+
+    .category {
+        background-color: #f2f2f2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .category-wrap {
+        background-color: white;
+        width: 1200px;
+        margin: auto;
+    }
+
+    .category-title {
+        padding: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: gray;
+        margin-right: auto;
+    }
+
+    .card-box>img {
+        width: 83px;
+    }
+
+    .card-box {
+        border: 0.5px, solid #f2f2f2;
+        width: 120px;
+        box-sizing: border-box;
+        height: 120px;
+        text-align: center;
+
+    }
+
+    .card {
+        width: 100%;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+    }
+
+    .card-box:hover {
+        box-shadow: 0px 0px 5px 0px black
+    }
+</style>
+
+<body>
+
+    <div class="gnb">
+        <div class="top flex-row">
+            <div class="left flex-row">
+                <li>Seller Center</li>
+                <li>|</li>
+                <li>Mulai Jual</li>
+                <li>|</li>
+                <li>Download</li>
+                <li>|</li>
+                <li>Ikuti Kami</li>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="right flex-row">
+                <li><i class="bi bi-bell"></i><span> Notifikasi</span></li>
+                <li><i class="bi bi-question-circle"></i><span> Bantuan</span></li>
+                <li><i class="bi bi-globe"></i><span> Bahasa Indonesia</span> <i class="bi bi-caret-down"></i></li>
+                <li>Daftar</li>
+                <li>|</li>
+                <li>Login</li>
+            </div>
+        </div>
+        <div class="bottom flex-row">
+            <img width="150" src="./image/logo_shopee.png" alt="" style="margin-right: 40px;">
+            <div class="searh flex-col">
+                <div class="search-box flex-row">
+                    <input type="text" placeholder="Cari produk">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+                <div class="tags flex-row">
+                    <li>Tas Wanita</li>
+                    <li>|</li>
+                    <li>Tas Selempang Wanita</li>
+                    <li>|</li>
+                    <li>Sepatu Wanita</li>
+                    <li>|</li>
+                    <li>Sepatu Pria</li>
+                    <li>|</li>
+                    <li>Kacamata</li>
+                    <li>|</li>
+                    <li>Celana Pendek</li>
+                    <li>|</li>
+                    <li>Masker</li>
+                </div>
+            </div>
+            <div class="cart">
+                <i class="bi bi-cart"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="banners flex-col">
+        <div class="top-banners flex-row">
+            <div class="left-banners swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="rolling-banners" src="./image/banners/banner_1.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img class="rolling-banners" src="./image/banners/banner_2.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img class="rolling-banners" src="./image/banners/banner_3.png" alt="">
+                    </div>
+                    <div class="swiper-slide" class="swiper-slide" data-swiper-autoplay="2000"><img
+                            class="rolling-banners" src="./image/banners/banner_4.png" alt="">
+                    </div>
+
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="right-banners flex-col">
+                <img src="./image/banners/banner_right_top.png" alt="">
+                <img src="./image/banners/banner_right_bottom.png" alt="">
+            </div>
+        </div>
+        <div class="bottom-banners flex-row">
+            <li class="flex-col">
+                <img src="./image/icons/1.png" alt="">
+                <span>Shopee Pilih Lokal</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/2.png" alt="">
+                <span>Elektronik 100% ORI</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/3.png" alt="">
+                <span>Pulsa, Tagihan, dan Tiket</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/4.png" alt="">
+                <span>inFashion</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/5.png" alt="">
+                <span>Shopee Supermarket</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/6.png" alt="">
+                <span>Bayar Di Tempat</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/7.png" alt="">
+                <span>Murah Lebay</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/8.png" alt="">
+                <span>Gratis Ongkir dan Voucher</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/9.png" alt="">
+                <span>Shopee Pay Later</span>
+            </li>
+            <li class="flex-col">
+                <img src="./image/icons/10.png" alt="">
+                <span>Semua Promo</span>
+            </li>
+        </div>
+    </div>
+    <div class="category">
+        <div class="category-wrap flex-col">
+            <div>CATEGORI</div>
+            <div class="card flex-row">
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/1.png" alt="">
+                        <span>Elektronik</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/11.png" alt="">
+                        <span>Makanan & Minuman</span>
+                    </div>
+
+
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/2.png" alt="">
+                        <span>Komputer & aksesoris</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/12.png" alt="">
+                        <span>perawatan & aksesoris</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/3.png" alt="">
+                        <span>Handphone & aksesoris</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/13.png" alt="">
+                        <span>Perlengkapan Rumah</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/4.png" alt="">
+                        <span>Pakaian Pria</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/14.png" alt="">
+                        <span>Pakaian Wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/5.png" alt="">
+                        <span>Sepatu Pria</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/15.png" alt="">
+                        <span>Fashion Muslim</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/6.png" alt="">
+                        <span>Tas Pria</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/16.png" alt="">
+                        <span>Fashion Bayi & Anak</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/7.png" alt="">
+                        <span>Aksesoris Fashion</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/17.png" alt="">
+                        <span>Ibu & Bayi</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/8.png" alt="">
+                        <span>Jam Tangan</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/18.png" alt="">
+                        <span>Sepatu Wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/9.png" alt="">
+                        <span>Kesehatan</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/19.png" alt="">
+                        <span>Tas Wanita</span>
+                    </div>
+                </li>
+                <li class="flex-col">
+                    <div class="card-box flex-col">
+                        <img src="image/category/10.png" alt="">
+                        <span>Hobi & Koleksi</span>
+                    </div>
+                    <div class="card-box flex-col">
+                        <img src="image/category/20.png" alt="">
+                        <span>Otomotif</span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="floating">
+        <img src="image/floating.png">
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+
+        });
+    </script>
+</body>
+
+</html>
